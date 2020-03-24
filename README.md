@@ -1,8 +1,8 @@
-## Курс Reboot Java
+## Курс School Java
 
 
 ### Для клонирования репозитория выполните в консоле
 
 ```markdown
-git clone https://github.com/RodinDenis/Reboot-Java-100320.git
+git clone https://github.com/RodinDenis/School-Java-100320.git
 ```
