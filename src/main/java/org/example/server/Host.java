@@ -3,6 +3,7 @@ package org.example.server;
 import org.example.interaction.ValidateException;
 import org.example.interaction.Request;
 import org.example.interaction.Responce;
+import org.example.server.product.AccountTypes;
 import org.example.server.product.Card;
 
 import java.util.Map;
@@ -22,7 +23,7 @@ public class Host {
             e.printStackTrace();
             return new Responce(e.getCode(),e.getDesc());
         }
-        return new Responce(cards.get(request.getNumber()).getAccount().getBalance());
+        return new Responce(cards.get(request.getNumber()).getAccount(AccountTypes.DEFAULT.ordinal()).getBalance());
     }
 
     private void validate(Request request) throws ValidateException {
