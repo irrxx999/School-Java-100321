@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector;
 import org.example.server.product.Balance;
 
+//todo: Подумать над рефакторингом класса org.example.interaction.JSONParser
 public class JSONParser {
     public static String saveObject(Object paylod) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();

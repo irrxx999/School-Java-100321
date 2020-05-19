@@ -9,6 +9,7 @@ import org.example.server.product.Card;
 import java.util.Map;
 import java.util.TreeMap;
 
+// todo: В классе org.example.server.Host в методах getBalance и validate реализовать логику получения объекта класса BalancePaylod и получения из него необходимых полей с данными запроса. В текущей версии данные запроса получаются на прямую из объекта класса Request.
 public class Host {
     private Map<String,Card> cards = new TreeMap<>();
 
