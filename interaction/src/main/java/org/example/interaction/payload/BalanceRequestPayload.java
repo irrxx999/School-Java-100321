@@ -1,11 +1,11 @@
-package org.example.interaction;
+package org.example.interaction.payload;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.time.LocalDate;
 
 @XmlRootElement(name = "Balance.Payload")
-public class BalancePaylod {
+public class BalanceRequestPayload {
     @XmlElement
     private LocalDate expDate;
     @XmlElement
@@ -13,7 +13,7 @@ public class BalancePaylod {
     @XmlElement
     private int PIN;
 
-    public BalancePaylod(LocalDate expDate, String number, int PIN) {
+    public BalanceRequestPayload(LocalDate expDate, String number, int PIN) {
         this.expDate = expDate;
         this.number = number;
         this.PIN = PIN;

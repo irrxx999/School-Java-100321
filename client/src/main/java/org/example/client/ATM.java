@@ -1,10 +1,8 @@
 package org.example.client;
 
-import org.example.interaction.BalancePaylod;
-import org.example.interaction.XMLParser;
 import org.example.interaction.Request;
-import org.example.server.Host;
-import org.example.server.product.Balance;
+import org.example.interaction.XMLParser;
+import org.example.interaction.payload.BalanceRequestPayload;
 
 import javax.xml.bind.JAXBException;
 import java.time.LocalDate;
@@ -26,7 +24,7 @@ public class ATM {
 //        Optional<Balance> balance = responce.getBalance();
 //        return  balance.orElse();
 
-        BalancePaylod paylod = new BalancePaylod(expDate, number, PIN);
+        BalanceRequestPayload paylod = new BalanceRequestPayload(expDate, number, PIN);
 
         Request request = null;
         try {

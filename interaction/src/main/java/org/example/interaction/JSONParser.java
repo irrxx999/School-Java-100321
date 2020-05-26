@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.AnnotationIntrospector;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector;
-import org.example.server.product.Balance;
+
 
 //todo: Подумать над рефакторингом класса org.example.interaction.JSONParser
 public class JSONParser {

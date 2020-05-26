@@ -1,17 +1,15 @@
 package org.example.interaction;
 
-import org.example.server.product.Balance;
-
 import java.util.Optional;
 
 public class Responce {
-    private Balance balance;
+    private String payload;
     private int code;
     private String desc;
 
 
-    public Responce(Balance balance) {
-        this.balance = balance;
+    public Responce(String payload) {
+        this.payload = payload;
         this.code = 0;
         this.desc = "Ok";
     }
@@ -20,11 +18,11 @@ public class Responce {
         this.code = code;
         this.desc = desc;
 
-        this.balance = null;
+        this.payload = null;
     }
 
-    public Optional<Balance> getBalance() {
-        return Optional.ofNullable(balance);
+    public Optional<String> getBalance() {
+        return Optional.ofNullable(payload);
     }
 
     public int getCode() {

@@ -4,7 +4,6 @@ package org.example.server.product;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class Card {
     private List<Account> accounts = new ArrayList<>();
